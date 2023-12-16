@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .firstDiV{
+            width: 220px;
+            height: 220px;
+            border: 1px solid #FF0000;
+        }
+        .seconDiv{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes example{
+            0%{
+                background-color: red;
+                left: 0px;
+                opacity: 1;
+            }
+            50%{
+                background-color: blue;
+                left: 200px;
+                opacity: 0;
+            }
+            100%{
+                background-color: red;
+                left: 0px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="firstDiV">
+        <div class="seconDiv"></div>
+    </div>
+</body>
+</html>
